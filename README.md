@@ -1,22 +1,16 @@
 ## Password Generator
-Link here TKTK
+https://competentpunk.github.io/password-generator/
 
 ## Description
 
-In order to best market my new coding skills, I am making a portfolio website.
-With this site I want visitors to be able to:
-- Learn about me
-- View my previous work: live site and code
-- View my resume to cosinder my skills
-- Contact me if interested
+In order to simplify the process of choosing or writing a secure password, this password generator randomly generates a password that meets a certain criteria in seconds.
 
 Additional key elements:
+- JavaScript 
 - Accessibility
-- Mobile first / Resizable
 - Future maintaince
 
 ---
-
 
 ## Table of Contents 
 
@@ -28,12 +22,13 @@ Additional key elements:
 
 To use the password generator, click on the following link: 
 
+https://competentpunk.github.io/password-generator/
+
 ## Usage
 
 This application is meant to simplify the chosing of secure passwords, by randomly generating one using JavaScript.
 
-![Template screenshot](./assets/images/portfolio-example-1.png)
-![Website home page screenshot](./assets/images/portfolio-example-2.png)
+![Template screenshot](./assets/images/challenge-3-screenshot.png)
 
 ## License
 

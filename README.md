@@ -1,0 +1,60 @@
+## Password Generator
+Link here TKTK
+
+## Description
+
+In order to best market my new coding skills, I am making a portfolio website.
+With this site I want visitors to be able to:
+- Learn about me
+- View my previous work: live site and code
+- View my resume to cosinder my skills
+- Contact me if interested
+
+Additional key elements:
+- Accessibility
+- Mobile first / Resizable
+- Future maintaince
+
+---
+
+
+## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+To use the password generator, click on the following link: 
+
+## Usage
+
+This application is meant to simplify the chosing of secure passwords, by randomly generating one using JavaScript.
+
+![Template screenshot](./assets/images/portfolio-example-1.png)
+![Website home page screenshot](./assets/images/portfolio-example-2.png)
+
+## License
+
+MIT License
+
+Copyright (c) [2023] [erynnaffeldt]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

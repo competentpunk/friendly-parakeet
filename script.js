@@ -1,50 +1,44 @@
-// Assignment code here
-
-// CAPTURE USER INPUT
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-//Add password criteria //BREAK INTO SEPERATE POOLS
+// CAPTURE USER INPUT
+//Add password criteria 
 var charsLower = "abcdefghijklmnopqrstuvwxyz";
 var charsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var charsNum = "0123456789";
 var charsSpec = "!#$%&'()*+,-./:;<=>?@[\"]\\^_`{|}~";
-var comboPool = ""
+var comboPool = charsLower + charsUpper + charsNum + charsSpec;
 
 //Generate Password Function
 function generatePassword() {
 
-  // CHANGE PROMPTS TO CONFIRM and ADD VALIDATORS
-
   // PROMPT 1: Password length - at least 8 characters and no more than 128 characters
-  var passwordLength = window.prompt('Password Length');
+  var passwordLength = window.prompt('Password Length: must be at least 8 characters and no more than 128 characters.');
   if (passwordLength < 8 || passwordLength > 128) {
     // Add warning prompt for bad input on LENGTH
-    window.alert('Invalid password length. Must be between at least 8 characters and no more than 128 characters.')
+    window.alert('Invalid password length. Must be at least 8 characters and no more than 128 characters.')
   }
   else {
     // PROMPT 2: Confirm whether or not to include lowercase
-    var passwordLowercase = window.confirm('Password Lowercase');
+    var passwordLowercase = window.confirm('Include lowercase characters?');
     if (passwordLowercase === true) {
       // If its true, i want to include all lowercase letters
       comboPool = comboPool + charsLower;
     }
     // PROMPT 3: Confirm whether or not to include uppercase
-    var passwordUppercase = window.confirm('Password Uppercase');
+    var passwordUppercase = window.confirm('Include uppercase characters?');
     if (passwordUppercase === true) {
       // If its true, i want to include all upper case
       comboPool = comboPool + charsUpper;
     }
     // PROMPT 4: Confirm whether or not to include numeric
-    var passwordNumbers = window.confirm('Password Numbers');
+    var passwordNumbers = window.confirm('Include numbers?');
     if (passwordNumbers === true) {
       // If its true, i want to include all numeric
       comboPool = comboPool + charsNum;
     }
     // PROMPT 5: Confirm whether or not to include special characters
-    var passwordSpecial = window.confirm('Password Special Characters');
+    var passwordSpecial = window.confirm('Include special characters?');
     if (passwordSpecial === true) {
       // If its true, i want to include all special characters
       comboPool = comboPool + charsSpec;
@@ -53,14 +47,14 @@ function generatePassword() {
     for (var i = 0; i < passwordLength; i++) {
       // comboPool is all the possible variables
       // Need to create a new variable that is just the password characters
+    var passwordChars = comboPool;
     }
   }
 }
 
 // Figure out how to randomize the included characters within the given password length
 
-
-// This writes password to the #password input 
+// This writes out password to the #password input 
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");

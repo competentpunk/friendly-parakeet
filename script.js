@@ -22,6 +22,7 @@ function generatePassword() {
   var passwordLength = window.prompt('Password Length');
   if (passwordLength < 8 || passwordLength > 128) {
     // Add warning prompt for bad input on LENGTH
+    window.alert('Invalid length')
   }
   else {
     // PROMPT 2: Confirm whether or not to include lowercase

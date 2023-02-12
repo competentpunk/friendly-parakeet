@@ -22,7 +22,7 @@ function generatePassword() {
   var passwordLength = window.prompt('Password Length');
   if (passwordLength < 8 || passwordLength > 128) {
     // Add warning prompt for bad input on LENGTH
-    window.alert('Invalid length')
+    window.alert('Invalid password length. Must be between at least 8 characters and no more than 128 characters.')
   }
   else {
     // PROMPT 2: Confirm whether or not to include lowercase
@@ -51,7 +51,6 @@ function generatePassword() {
     }
 
     for (var i = 0; i < passwordLength; i++) {
-      // Difficult part of making it random
       // comboPool is all the possible variables
       // Need to create a new variable that is just the password characters
     }
@@ -61,7 +60,7 @@ function generatePassword() {
 // Figure out how to randomize the included characters within the given password length
 
 
-// Write password to the #password input 
+// This writes password to the #password input 
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -69,13 +68,5 @@ function writePassword() {
   passwordText.value = password;
 }
 
-// Add event listener to generate button
+// Event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-// alert()
-// alert(password)
-
-// Special Characters list:
-// "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"

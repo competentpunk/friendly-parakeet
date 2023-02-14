@@ -28,7 +28,9 @@ https://competentpunk.github.io/password-generator/
 
 This application is meant to simplify the chosing of secure passwords, by randomly generating one using JavaScript.
 
-![Template screenshot](./assets/images/challenge-3-screenshot.png)
+![Template screenshot](./assets/images/challenge-3-screenshot-1.png)
+![Template screenshot](./assets/images/challenge-3-screenshot-2.png)
+![Template screenshot](./assets/images/challenge-3-screenshot-3.png)
 
 ## License
 

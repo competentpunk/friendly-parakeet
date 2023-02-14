@@ -7,16 +7,18 @@ var charsLower = "abcdefghijklmnopqrstuvwxyz";
 var charsUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var charsNum = "0123456789";
 var charsSpec = "!#$%&'()*+,-./:;<=>?@[\"]\\^_`{|}~";
-var comboPool = charsLower + charsUpper + charsNum + charsSpec;
+// comboPool is all the possible variables
+var comboPool = "";
+var thePassword = "";
 
 //Generate Password Function
 function generatePassword() {
 
   // PROMPT 1: Password length - at least 8 characters and no more than 128 characters
-  var passwordLength = window.prompt('Password Length: must be at least 8 characters and no more than 128 characters.');
+  var passwordLength = window.prompt("Password Length. Must be at least 8 characters and no more than 128 characters.");
   if (passwordLength < 8 || passwordLength > 128) {
     // Add warning prompt for bad input on LENGTH
-    window.alert('Invalid password length. Must be at least 8 characters and no more than 128 characters.')
+    window.alert("Invalid password length. Must be at least 8 characters and no more than 128 characters.")
   }
   else {
     // PROMPT 2: Confirm whether or not to include lowercase
@@ -44,15 +46,19 @@ function generatePassword() {
       comboPool = comboPool + charsSpec;
     }
 
+    console.log(comboPool);
+
+    // This pulls together the password criteria
     for (var i = 0; i < passwordLength; i++) {
-      // comboPool is all the possible variables
-      // Need to create a new variable that is just the password characters
-    var passwordChars = comboPool;
+
+      // each charater has an index from 0 - string end. Use this to pull them
+      // Figure out how to randomize the included characters within the given password length
+     thePassword += comboPool[Math.floor(Math.random() * comboPool.length)];
     }
+    console.log(thePassword);
+    return thePassword
   }
 }
-
-// Figure out how to randomize the included characters within the given password length
 
 // This writes out password to the #password input 
 function writePassword() {
